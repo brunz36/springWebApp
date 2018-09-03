@@ -30,22 +30,10 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
 	
 	private void initData() {
 		// Publisher
-		Publisher harperCollins = new Publisher();
-		harperCollins.setName("Harper Collins");
-		harperCollins.setAddressOne("123 Main St.");
-		harperCollins.setAddressTwo("Ste. 101");
-		harperCollins.setCity("New York");
-		harperCollins.setState("NY");
-		harperCollins.setZipCode(12345);
+		Publisher harperCollins = new Publisher("Harper Collins", "123 Main St.", "Ste. 101", "New York", "NY", 12345);
 		publisherRepository.save(harperCollins);
 		
-		Publisher time = new Publisher();
-		time.setName("Time Inc.");
-		time.setAddressOne("987 Broad St.");
-		time.setAddressTwo("# A");
-		time.setCity("Los Angeles");
-		time.setState("CA");
-		time.setZipCode(98543);
+		Publisher time = new Publisher("Time Inc.", "987 Broad St.", "# A", "Los Angeles", "CA", 98543);
 		publisherRepository.save(time);
 		
 		// Eric

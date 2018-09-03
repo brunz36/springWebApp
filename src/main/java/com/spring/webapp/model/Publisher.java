@@ -25,7 +25,7 @@ public class Publisher {
 	private String city;
 	private String state;
 	private Integer zipCode;
-
+	
 	public Publisher(String name, String addressOne, String addressTwo, String city, String state, Integer zipCode) {
 		this.name = name;
 		this.addressOne = addressOne;
