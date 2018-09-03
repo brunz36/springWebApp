@@ -7,9 +7,11 @@ import java.util.Set;
 import javax.persistence.*;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity
+@NoArgsConstructor
 public class Book {
 	
 	@Id
